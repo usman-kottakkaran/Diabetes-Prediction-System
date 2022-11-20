@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction</title>
+    <style>
+        body {
+            background-image: url("{% static '\DiabetesPrediction\images\DiabetesPrediction01.jpg'%}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+         .main{
+            position: initial;
+            top: 1px;
+            left: 410px;
+            width: 500px;
+            background-color:#ffffff;
+            border-radius: 5px;
+            align-items: center;
+            padding: 1%;
+        }
+        h1{
+            color: #0086b3;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        input[type=submit]{
+            background-color: #4dc3ff;
+            border: 2px;
+            color: white;
+            padding: 8px 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<div align="center" class="main">
+    <h1>Please enter the following information:</h1>
+    <form action="result">
+        <table>
+            <tr>
+                <td align="right">HighBP:</td>
+                <td align="left"><input type="text" name="n1"></td>
+            </tr>
+
+            <tr>
+                <td align="right">HighChol:</td>
+                <td align="left"><input type="text" name="n2"></td>
+            </tr>
+            <tr>
+                <td align="right">BMI:</td>
+                <td align="left"><input type="text" name="n4"></td>
+            </tr>
+
+            <tr>
+                <td align="right">Smoker:</td>
+                <td align="left"><input type="text" name="n5"></td>
+            </tr>
+
+
+            <tr>
+                <td align="right">Stroke:</td>
+                <td align="left"><input type="text" name="n6"></td>
+            </tr>
+
+            <tr>
+                <td align="right">HeartDiseaseorAttack:</td>
+                <td align="left"><input type="text" name="n7"></td>
+            </tr>
+
+            <tr>
+                <td align="right">PhysActivity:</td>
+                <td align="left"><input type="text" name="n8"></td>
+            </tr>
+            <tr>
+                <td align="right">HvyAlcoholConsump:</td>
+                <td align="left"><input type="text" name="n11"></td>
+            </tr>
+            <tr>
+                <td align="right">NoDocbcCost:</td>
+                <td align="left"><input type="text" name="n13"></td>
+            </tr>
+
+             <tr>
+                <td align="right">GenHlth:</td>
+                <td align="left"><input type="text" name="n14"></td>
+            </tr>
+
+             <tr>
+                <td align="right">MentHlth:</td>
+                <td align="left"><input type="text" name="n15"></td>
+            </tr>
+
+             <tr>
+                <td align="right">PhysHlth:</td>
+                <td align="left"><input type="text" name="n16"></td>
+            </tr>
+
+             <tr>
+                <td align="right">DiffWalk:</td>
+                <td align="left"><input type="text" name="n17"></td>
+            </tr>
+             <tr>
+                <td align="right">Age:</td>
+                <td align="left"><input type="text" name="n19"></td>
+            </tr>
+
+             <tr>
+                <td align="right">Education:</td>
+                <td align="left"><input type="text" name="n20"></td>
+            </tr>
+             <tr>
+                <td align="right">Income:</td>
+                <td align="left"><input type="text" name="n21"></td>
+            </tr>
+
+
+        </table>
+        <input type="submit">
+
+    </form>
+    Result:{{result2}}
+</div>
+</body>
+</html>
